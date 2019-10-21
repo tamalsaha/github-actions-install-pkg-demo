@@ -30,7 +30,7 @@ jobs:
         echo
         sudo mv restic /bin/restic
         echo
-        /bin/restic version
+        restic version
         echo
         echo
         echo
@@ -38,4 +38,6 @@ jobs:
         bzip2 -d restic_${NEW_RESTIC_VER}.bz2
         chmod +x restic_${NEW_RESTIC_VER}
         sudo mv restic_${NEW_RESTIC_VER} /bin/restic_${NEW_RESTIC_VER}
+        echo
+        restic_0.9.5 version
         echo
