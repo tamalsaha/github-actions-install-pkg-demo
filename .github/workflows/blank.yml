@@ -41,3 +41,10 @@ jobs:
         echo
         restic_0.9.5 version
         echo
+    - name: Run a multi-line script
+      run: |
+        set -x
+        echo
+        restic version
+        echo
+        restic_0.9.5 version
