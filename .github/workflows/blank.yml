@@ -15,6 +15,7 @@ jobs:
       run: |
         set -x
         which curl
-        whcih bzip2
+        which bzip2
+        ls -l /bin
         sudo apt-get -qq update
         sudo apt-get install -y curl bzip2
